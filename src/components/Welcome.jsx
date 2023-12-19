@@ -5,7 +5,7 @@ function Welcome() {
   return (
     <div className="text-center">
       <h2> Benvenuti scegliete i vostri libri preferiti</h2>
-      <Alert variant="primary"></Alert>
+      <Alert variant="primary">Scegli il tuo libro preferito</Alert>
     </div>
   );
 }
