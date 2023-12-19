@@ -4,19 +4,13 @@ import { Card } from "react-bootstrap";
 // import fantasy from "../data";
 function AllTheBooks(props) {
   return (
-    <>
-      <Card>
-        <Card.Body>
-          <Card.Img variant="top" src={props.img} />
-
-          <Card.Title>{props.title}</Card.Title>
-          <Card.Text>
-            <p>{props.category}</p>
-            <p>{props.price}</p>
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </>
+    <Card key={props.book.asin}>
+      <Card.Img variant="top" src={props.book.img} />
+      <Card.Body>
+        <Card.Title>{props.book.title}</Card.Title>
+        <Card.Text></Card.Text>
+      </Card.Body>
+    </Card>
   );
 }
 

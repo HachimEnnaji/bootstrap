@@ -1,19 +1,23 @@
 import React from "react";
 import AllTheBooks from "./AllTheBooks";
 import fantasy from "../data/fantasy.json";
-import { Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 function MyMain() {
   return (
     <>
-      <AllTheBooks />
-      <Row>
-        {fantasy.map((fantasybook) => {
-          return <AllTheBooks book={fantasybook} />;
+      <Row className="mx-5 gy-2">
+        {fantasy.map((fantasybook, index) => {
+          console.log(fantasybook);
+          return (
+            <Col xs={3} key={`cardBook-${index}`}>
+              <AllTheBooks book={fantasybook} />
+            </Col>
+          );
         })}
+        ;
       </Row>
     </>
   );
 }
-
 export default MyMain;
