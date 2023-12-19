@@ -5,8 +5,8 @@ import { Card } from "react-bootstrap";
 function AllTheBooks(props) {
   return (
     <Card key={props.book.asin}>
-      <Card.Img variant="top" src={props.book.img} />
-      <Card.Body>
+      <Card.Img style={{ height: "300px" }} className=" object-fit-cover" variant="top" src={props.book.img} />
+      <Card.Body style={{ height: "180px" }}>
         <Card.Title>{props.book.title}</Card.Title>
         <Card.Text></Card.Text>
       </Card.Body>

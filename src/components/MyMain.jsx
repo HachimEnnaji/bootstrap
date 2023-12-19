@@ -6,11 +6,11 @@ import { Col, Row } from "react-bootstrap";
 function MyMain() {
   return (
     <>
-      <Row className="mx-5 gy-2">
+      <Row className="mx-5 gy-5">
         {fantasy.map((fantasybook, index) => {
           console.log(fantasybook);
           return (
-            <Col xs={6} md={3} lg={2} key={`cardBook-${index}`}>
+            <Col xs={12} md={6} lg={3} key={`cardBook-${index}`}>
               <AllTheBooks book={fantasybook} />
             </Col>
           );
