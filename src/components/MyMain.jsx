@@ -10,7 +10,7 @@ function MyMain() {
         {fantasy.map((fantasybook, index) => {
           console.log(fantasybook);
           return (
-            <Col xs={3} key={`cardBook-${index}`}>
+            <Col xs={6} md={3} lg={2} key={`cardBook-${index}`}>
               <AllTheBooks book={fantasybook} />
             </Col>
           );
